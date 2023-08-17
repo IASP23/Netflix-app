@@ -1,0 +1,10 @@
+.headerLink {
+    font-weight: 600;
+    color: #ccc;
+    transition-duration: 400ms;
+}
+
+.headerLink :hover {
+    color: #ccc;
+    font-size: 12px;
+}

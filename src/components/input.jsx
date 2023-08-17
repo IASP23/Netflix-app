@@ -1,9 +1,13 @@
-export const Input = () => {
+export const Input = ({ id, onChange, value, label, type = "text" }) => {
   return (
     <div className="relative">
       <input
-        id="email"
+        id={id}
+        value={value}
+        onChange={onChange}
+        type={type}
         className="
+        
   block 
   rounded-md 
   px-6
@@ -20,7 +24,7 @@ export const Input = () => {
         placeholder=" "
       />
       <label
-        htmlFor="email"
+        htmlFor={id}
         className="
         absolute 
         text-md
@@ -37,7 +41,7 @@ export const Input = () => {
         peer-placeholder-shown:translate-y-0 
         peer-focus:scale-75
         peer-focus:-translate-y-3">
-        Email
+        {label}
       </label>
     </div>
   );
